@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <script src="1_JSFILE.JS"></script> // external linked syntax
+</head>
+
+<body>
+
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+<script>
+    //alert(" Hi ");
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+</script>
+
+</html>
