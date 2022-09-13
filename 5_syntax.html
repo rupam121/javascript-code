@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPARE 3 INTEGER</title>
+</head>
+
+<body>
+    <h1> javascrpt expression </h1>
+    <!-- <h2> COMPARE 3 VALUE AND FIND BIG INTEGER : </h2> -->
+    <!-- <p id="demo"> </p> -->
+</body>
+<script>
+
+    var x = Number(prompt(" Enter x : "));
+    var y = Number(prompt(" Enter y : "));
+    var z = Number(prompt(" Enter z : "));
+    // Document.write(" Element are : " + "<br>");
+    document.write(x + " " + y + " " + z + " <br>");
+    var temp = x + y + z;
+    document.write(" SUM is : " + temp + "<br>");
+    // Document.write("x = " + x + "y = " + y + "z = " + z);
+    var avg = temp / 3;
+    document.write(" Avarage is : " + avg + "<br>");
+
+    if (x > y && x > z) {
+        document.write("X IS BIG INTEGER ");
+    }
+    else if (y > x && y > z) {
+        document.write(" Y IS BIG INTEGER ");
+    }
+    else {
+        document.write(" Z IS BIG INTEGER ");
+    }
+
+</script>
+
+</html>

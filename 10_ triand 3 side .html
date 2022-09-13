@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find area and peremeteer of circle </title>
+</head>
+
+<body>
+    <h1>4.input 3 side of triangle then find out area and paremeter of triangle ?</h1>
+</body>
+<script>
+    var a = Number(prompt(" Enter a : "));
+    var b = Number(prompt(" Enter b : "));
+    var c = Number(prompt(" Enter c : "));
+    var s = (a + b + c) / 2;
+
+    // var s = p / 2;
+    var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    // var area = Math.sqrt(areaE);
+
+
+    document.write(" area is: " + area + "<br>");
+    document.write(" paremeter is: " + (a + b + c));
+</script>
+
+</html>
