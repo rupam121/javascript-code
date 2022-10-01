@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find profit</title>
+</head>
+
+<body style="background-color: rgb(132, 201, 132);">
+    <h1>Input the cost price and selling price of an item then display whether the seller has done profit or lose and
+        how much ?</h1>
+</body>
+<script>
+    var cost = Number(prompt('Enter cost prise :  '));
+    var shell = Number(prompt('Enter selling prise: '));
+    var profit = shell - cost;
+    var loss = cost - shell;
+    document.write(" Cost is : " + cost + "  Sell prise : " + shell + "<br>");
+    if (cost < shell) {
+        loss = 0;
+        document.write(" profit is: " + profit + " loss is: " + loss);
+    }
+    if (cost == shell) {
+        document.write(" profit is: " + profit + " loss is: " + loss);
+    }
+    if (cost > shell) {
+        profit = 0;
+        document.write(" profit is: " + profit + " loss is: " + loss);
+    }
+</script>
+
+</html>

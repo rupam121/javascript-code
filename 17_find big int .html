@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find big integer</title>
+</head>
+
+<body>
+    <h1>find big integer btw 4 integer</h1>
+</body>
+<script>
+    var a = Number(prompt('Enter a :  '));
+    var b = Number(prompt('Enter b :  '));
+    var c = Number(prompt('Enter c :  '));
+    var d = Number(prompt('Enter d :  '));
+    var big, low;
+    document.write(" a is : " + a + "  b is : " + b + "  c is : " + c + "  d is : " + d + "<br>");
+    // for high value
+    if (a > b && a > c && a > d) {
+        big = a;
+    }
+    if (b > a && b > c && b > d) {
+        big = b;
+    }
+    if (c > a && c > b && c > d) {
+        big = c;
+    }
+    if (d > a && d > b && d > c) {
+        big = d;
+    }
+    // for low value
+    if (a < b && a < c && a < d) {
+        low = a;
+    }
+    if (b < a && b < c && b < d) {
+        low = b;
+    }
+    if (c < a && c < b && c < d) {
+        low = c;
+    }
+    if (d < a && d < b && d < c) {
+        low = d;
+    }
+    document.write(" big int : " + big + " . low int : " + low);
+
+</script>
+
+</html>
